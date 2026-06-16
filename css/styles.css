@@ -1,5 +1,6 @@
 /* Importar las variables */
 @import url('variables.css');
+@import url('components/game-ui.css');
 
 body {
     font-family: var(--font-main);
