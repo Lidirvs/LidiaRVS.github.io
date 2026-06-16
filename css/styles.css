@@ -1,0 +1,24 @@
+/* Importar las variables */
+@import url('variables.css');
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    overflow-x: hidden;
+}
+
+/* Sobrescribir algunas clases de Bootstrap para que usen nuestros colores */
+.text-main { color: var(--color-text-main) !important; }
+.bg-surface { background-color: var(--color-surface) !important; }
+
+/* Efecto base para las transiciones */
+a, button {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mejora de Accesibilidad: Outline visible al navegar con teclado */
+*:focus-visible {
+    outline: 3px dashed var(--color-kh-blue);
+    outline-offset: 4px;
+}
