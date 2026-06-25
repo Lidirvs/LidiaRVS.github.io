@@ -1,5 +1,5 @@
 /* ==========================================================================
-   COMPONENTES CORE: ESTILO ANIMAL CROSSING & KINGDOM HEARTS
+   COMPONENTES CORE: ESTILO ANIMAL CROSSING 
    ========================================================================== */
 
 /* Navbar estilo Menú Flotante / Inventario */
@@ -64,4 +64,54 @@
 .btn-craft:active {
     transform: translate(2px, 2px);
     box-shadow: 2px 2px 0px var(--color-text-main);
+}
+.inventory-grid {
+    padding: 2rem;
+    background-color: rgba(253, 251, 247, 0.5);
+    border-radius: var(--border-radius-lg);
+    border: 4px dashed var(--color-mint);
+}
+
+.inventory-slot {
+    flex: 1 1 calc(33.333% - 1rem);
+    min-width: 250px;
+}
+
+.ac-item-card {
+    background-color: var(--color-surface);
+    border: var(--border-game);
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto rebote tipo AC */
+    cursor: pointer;
+}
+
+/* Efecto hover: El objeto "levita" en el inventario */
+.ac-item-card:hover, .ac-item-card:focus-within {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: var(--shadow-game);
+    border-color: var(--color-mint);
+    outline: none;
+}
+
+.ac-item-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+    background-color: var(--color-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-text-muted);
+}
+
+.ac-btn-action {
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.5rem;
 }
