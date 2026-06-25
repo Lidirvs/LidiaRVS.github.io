@@ -1,28 +1,14 @@
 :root {
-    /* Paleta de Colores Principal (Pasteles: AC / KH) */
-    --color-mint: #A8E6CF;       /* Menta suave, transmite frescura */
-    --color-lilac: #CDB4DB;      /* Lila pastel, creativo y amigable */
-    --color-kh-blue: #A2D2FF;    /* Azul cielo Kingdom Hearts */
-    --color-gold: #FFD166;       /* Dorado para acentos/iconos (estilo llaves espada/estrellas) */
+    /* Paleta Nook Inc. */
+    --color-nook-green: #5FD1A2; /* Verde hoja principal */
+    --color-nook-sand: #F2EACC;  /* Arena/Crema para fondos */
+    --color-nook-wood: #8B5A2B;  /* Texto oscuro/marrón en lugar de negro */
+    --color-nook-bubble: #FFFFFF; /* Cajas de diálogo */
+    --color-nook-highlight: #FFFDE7; /* Resaltados */
 
-    /* Fondos y Superficies */
-    --color-bg: #FDFBF7;         /* Blanco roto/crema para el fondo (menos fatiga visual) */
-    --color-surface: #FFFFFF;    /* Para las tarjetas de proyectos (Inventory style) */
-
-    /* Textos (Alto Contraste para Accesibilidad AAA) */
-    --color-text-main: #2B2D42;  /* Azul marino casi negro (No usar negro puro) */
-    --color-text-muted: #6C757D; /* Gris de Bootstrap para textos secundarios */
-
-    /* Tipografía */
-    --font-main: 'Nunito', system-ui, -apple-system, sans-serif; /* Redondeada y amigable */
-
-    /* Interfaz UI Gamificada / Manualidades */
-    --border-radius-sm: 8px;
-    --border-radius-lg: 24px;    /* Bordes muy redondeados (estilo AC) */
-    --border-game: 3px solid var(--color-text-main); /* Borde grueso para emular UI de juego */
-    
-    /* Sombras (Soft Shadows) */
-    --shadow-sm: 0 4px 6px rgba(43, 45, 66, 0.05);
-    --shadow-md: 0 8px 15px rgba(43, 45, 66, 0.1);
-    --shadow-game: 4px 4px 0px var(--color-lilac); /* Sombra dura estilo retro/manualidad */
+    /* UI Animal Crossing */
+    --font-main: 'Nunito', sans-serif;
+    --border-radius-ac: 30px; /* Bordes de pastilla */
+    --border-ac: 4px solid var(--color-nook-wood);
+    --shadow-ac: 0 6px 0 rgba(139, 90, 43, 0.2); /* Sombra plana inferior */
 }

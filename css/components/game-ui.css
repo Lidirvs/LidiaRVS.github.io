@@ -1,67 +1,39 @@
 /* ==========================================================================
    COMPONENTES CORE: ESTILO ANIMAL CROSSING & KINGDOM HEARTS
    ========================================================================== */
-
-/* Navbar estilo Menú Flotante / Inventario */
-.custom-navbar {
-    background-color: rgba(253, 251, 247, 0.95); /* Fondo crema con opacidad */
-    border-bottom: var(--border-game);
-    box-shadow: var(--shadow-sm);
-    backdrop-filter: blur(5px); /* Efecto moderno de desenfoque */
-    transition: all 0.3s ease;
-}
-
-/* Enlaces de navegación tipo comandos de RPG */
-.nav-link-rpg {
-    font-weight: 700;
-    color: var(--color-text-main) !important;
-    padding: 0.5rem 1.2rem !important;
     border-radius: var(--border-radius-lg);
+/* Burbujas de diálogo y tarjetas estilo Nook */
+.ac-item-card {
+    background-color: var(--color-nook-bubble);
+    border: var(--border-ac);
+    border-radius: var(--border-radius-ac);
+    padding: 1.5rem;
+    text-align: center;
     position: relative;
-}
-
-/* Efecto Hover inspirado en Kingdom Hearts (Acento lila/menta al seleccionar) */
-.nav-link-rpg:hover {
-    background-color: var(--color-mint);
-    color: var(--color-text-main) !important;
-    transform: translateY(-2px);
-}
-
-.nav-link-rpg::after {
-    content: '✦';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%) scale(0);
-    color: var(--color-gold);
-    transition: transform 0.2s ease;
-}
-
-.nav-link-rpg:hover::after {
-    transform: translateX(-50%) scale(1);
-}
-
-/* Botones estilo "Manualidad" (Crafted Buttons) */
-.btn-craft {
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 0.8rem 1.8rem;
-    border: var(--border-game);
-    border-radius: var(--border-radius-lg);
-    background-color: var(--color-lilac);
-    color: var(--color-text-main);
-    box-shadow: var(--shadow-game);
+    box-shadow: var(--shadow-ac);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
+    color: var(--color-nook-wood);
 }
 
-.btn-craft:hover {
-    background-color: var(--color-mint);
-    transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0px var(--color-text-main);
+.ac-item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 0 rgba(139, 90, 43, 0.2);
+    background-color: var(--color-nook-highlight);
+}
+
+.btn-craft {
+    background-color: var(--color-nook-green);
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: var(--border-radius-ac);
+    padding: 0.8rem 1.5rem;
+    box-shadow: 0 4px 0 #3BA57D; /* Sombra verde oscuro */
+    transition: all 0.1s;
 }
 
 .btn-craft:active {
-    transform: translate(2px, 2px);
-    box-shadow: 2px 2px 0px var(--color-text-main);
+    transform: translateY(4px);
+    box-shadow: 0 0 0 transparent;
 }
