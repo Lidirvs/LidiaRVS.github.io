@@ -45,6 +45,25 @@
                             <a class="nav-link nav-link-rpg" href="#contact">Contacto</a>
                         </li>
                     </ul>
+                                    <!-- Grid de Inventario Animal Crossing -->
+                    <ul class="inventory-grid list-unstyled d-flex flex-wrap gap-3" aria-label="Inventario de Proyectos">
+                    <!-- Tarjeta GestFincas -->
+                    <li class="inventory-slot">
+                        <article class="ac-item-card" data-demo-type="video" data-repo-url="https://github.com/Lidirvs/gestfincas">
+                            <div class="ac-item-icon-wrapper">
+                                <!-- Icono representativo (SVG inline o imagen WebP) -->
+                                <span class="fs-1" aria-hidden="true">🏢</span>
+                            </div>
+                            <div class="ac-item-details">
+                                <h3 class="ac-item-name h6 fw-bold mb-1">GestFincas</h3>
+                                <p class="ac-item-tech small text-muted mb-0">PHP 8 / MySQL</p>
+                            </div>
+                            <button class="btn-craft ac-btn-action" aria-haspopup="dialog" aria-expanded="false">
+                                Equipar Demo
+                            </button>
+                        </article>
+                    </li>
+                </ul>
                 </div>
             </div>
         </nav>
@@ -75,7 +94,13 @@
                 </div>
             </div>
         </section>
-        
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="display-5 fw-bold text-main mb-4 text-center">Bolsillos (Proyectos)</h2>
+        <!-- El DOM Virtual Vainilla inyectará el inventario aquí -->
+        <div id="projects-container"></div> 
+    </div>
+</section>
         </main>
 
     <footer>
